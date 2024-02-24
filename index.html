@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <p>購物網站新增項目欄</p>
+  <form action='/add-product' method="post">
+    <label>商品名稱：</label>
+    <input type='text' name='name' value='汽水'>
+    <br>
+    <label>價格：</label>
+    <input type='text' name='price' value='20'>
+    <br>
+    <label>是否免運：</label>
+    <input type='checkbox' name='shipping' value='yes'>
+    <label for="yes">是</label>
+    <br>
+    <label>性別：</label>
+    <input type='radio' name='gender' id="male" value='boy'>
+    <label for="male">男生</label>
+    <input type='radio' name='gender' id="female" value='girl'>
+    <label for="female">女生</label>
+    <br>
+    <label>產品類別：</label>
+    <select name="accessories">
+      <option value="cloth">上衣類</option>
+      <option value="jacket">外套類</option>
+      <option value="paints">下身類</option>
+      <option value="accessories">配件類</option>
+    </select>
+    <br>
+    <label>商品備註：</label><br>
+    <textarea name="notes">
+
+    </textarea>
+    <br>
+    <br>
+    <input type='submit' value='Submit'>
+  </form>
+</body>
+
+</html>
