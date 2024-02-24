@@ -9,40 +9,58 @@
 </head>
 
 <body>
-  <p>購物網站新增項目欄</p>
-  <form action='/add-product' method="post">
-    <label>商品名稱：</label>
-    <input type='text' name='name' value='汽水'>
-    <br>
-    <label>價格：</label>
-    <input type='text' name='price' value='20'>
-    <br>
-    <label>是否免運：</label>
-    <input type='checkbox' name='shipping' value='yes'>
-    <label for="yes">是</label>
-    <br>
-    <label>性別：</label>
-    <input type='radio' name='gender' id="male" value='boy'>
-    <label for="male">男生</label>
-    <input type='radio' name='gender' id="female" value='girl'>
-    <label for="female">女生</label>
-    <br>
-    <label>產品類別：</label>
-    <select name="accessories">
-      <option value="cloth">上衣類</option>
-      <option value="jacket">外套類</option>
-      <option value="paints">下身類</option>
-      <option value="accessories">配件類</option>
-    </select>
-    <br>
-    <label>商品備註：</label><br>
-    <textarea name="notes">
-
+  <div id="content">
+    <h1>黑川先生後台管理系統</h1>
+    <hr>
+    <h2> 新增產品</h2>
+    <form action='/add-product' method="post">
+      <div id="formContent">
+        <div id="item">
+          <label id="name">商品名稱：</label>
+          <input type='text' name='name' value='請輸入產品名稱'>
+        </div>
+        <br>
+        <div id="item">
+          <label id="name">價格：</label>
+          <input type='text' name='price' value='請輸入產品價格'>
+        </div>
+        <br>
+        <div id="item">
+          <label id="name">是否免運：</label>
+          <input type='checkbox' name='shipping' value='yes'>
+          <label for="yes">是</label>
+        </div>
+        <br>
+        <div id="item">
+          <label id="name">性別：</label>
+          <input type='radio' name='gender' id="male" value='boy'>
+          <label for="male">男</label>
+          <input type='radio' name='gender' id="female" value='girl'>
+          <label for="female">女</label>
+        </div>
+        <br>
+        <div id="item">
+          <label id="name">產品類別：</label>
+          <select name="accessories" value="請選擇類別">
+            <option value="">請選擇產品類別</option>
+            <option value="cloth">洗髮類</option>
+            <option value="jacket">沐浴類</option>
+            <option value="paints">護髮類</option>
+            <option value="accessories">保養類</option>
+          </select>
+        </div>
+        <br>
+        <div id="item">
+          <label id="name">商品備註：</label>
+          <textarea name="notes">
     </textarea>
-    <br>
-    <br>
-    <input type='submit' value='Submit'>
-  </form>
+        </div>
+        <br>
+        <br>
+        <input type='submit' value='Submit'>
+      </div>
+    </form>
+  </div>
 </body>
 
 </html>
